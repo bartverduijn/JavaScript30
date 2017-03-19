@@ -23,6 +23,10 @@ body {
   transition: transform 0.5s;
 }
 
+.nav--fixed .site-wrap {
+  transform: scale(1);
+}
+
 header {
   text-align: center;
   height:50vh;
@@ -46,6 +50,15 @@ nav {
   transition:all 0.5s;
   position: relative;
   z-index: 1;
+}
+
+.nav--fixed nav {
+  position: fixed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav--fixed .logo {
+  max-width: 500px;
 }
 
 nav ul {
